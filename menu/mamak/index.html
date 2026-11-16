@@ -295,6 +295,10 @@
             gap: 18px;
         }
         @media (max-width: 460px) { .grid { gap: 14px; } }
+        @media (max-width: 400px) {
+            .grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+            .item .foot { flex-wrap: wrap; }
+        }
 
         .item {
             background: var(--white);
