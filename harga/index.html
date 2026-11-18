@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#05060a">
+    <title>Harga &amp; Pelan — Langkah Pertama</title>
+    <link rel="canonical" href="https://langkahpertama.website/harga/">
+    <meta name="description" content="Harga dan pelan jagaan laman web Langkah Pertama. Asas RM29, Bisnes RM59, Pro RM99 sebulan. Bayar setahun, 2 bulan percuma. Hosting, SSL, backup dan kemaskini. DM kami untuk tanya.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ms_MY">
+    <meta property="og:site_name" content="Langkah Pertama">
+    <meta property="og:url" content="https://langkahpertama.website/harga/">
+    <meta property="og:title" content="Harga &amp; Pelan — Langkah Pertama">
+    <meta property="og:description" content="Harga dan pelan jagaan laman web. Asas RM29, Bisnes RM59, Pro RM99 sebulan. Bayar setahun, 2 bulan percuma. DM kami untuk tanya.">
+    <meta property="og:image" content="https://langkahpertama.website/assets/og-image-2.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Harga &amp; Pelan — Langkah Pertama">
+    <meta name="twitter:description" content="Harga dan pelan jagaan laman web. Asas RM29, Bisnes RM59, Pro RM99 sebulan. Bayar setahun, 2 bulan percuma. DM kami untuk tanya.">
+    <meta name="twitter:image" content="https://langkahpertama.website/assets/og-image-2.png">
+    <link rel="icon" href="/assets/icon-192.png" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #05060a;
+            --bg-soft: #0b0d14;
+            --panel: rgba(255, 255, 255, 0.035);
+            --line: rgba(255, 255, 255, 0.1);
+            --gold: #d9b06c;
+            --gold-lite: #f0d6a4;
+            --ink: #05060a;
+            --text: #eef0f4;
+            --dim: #9aa3b2;
+            --ease: cubic-bezier(.22, 1, .36, 1);
+            --disp: "Space Grotesk", Inter, sans-serif;
+            --sans: Inter, -apple-system, sans-serif;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--sans);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.55;
+            -webkit-font-smoothing: antialiased;
+        }
+        body.is-dimmed { overflow: hidden; }
+        a { color: var(--gold); }
+        img { display: block; max-width: 100%; height: auto; }
+        .skip {
+            position: fixed; top: 10px; left: 10px; z-index: 10000;
+            display: inline-flex; align-items: center;
+            min-height: 44px; padding: 0 18px; border-radius: 8px;
+            background: #0c0d11; color: #fff;
+            font: 600 14px/1 var(--sans); text-decoration: none;
+            transform: translateY(-160%);
+        }
+        .skip:focus { transform: none; outline: 2px solid #fff; outline-offset: 2px; }
+        .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+
+        .top {
+            display: flex; align-items: center; justify-content: space-between;
+            gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--line);
+        }
+        .brand {
+            display: inline-flex; align-items: center; gap: 10px;
+            text-decoration: none; color: var(--text); min-height: 44px;
+        }
+        .brand img { width: 36px; height: 37px; object-fit: contain; }
+        .brand-name { font-family: var(--disp); font-weight: 600; font-size: .95rem; line-height: 1.15; }
+        .brand-name small {
+            display: block; font-family: var(--sans); font-weight: 500;
+            font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; color: var(--dim);
+        }
+        .top-links { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 4px 6px; }
+        .top-links a {
+            display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px;
+            color: var(--dim); text-decoration: none; font-size: .9rem; font-weight: 500;
+            transition: color .4s var(--ease);
+        }
+        .top-links a:hover { color: var(--text); }
+        .top-links .nav-cta {
+            color: var(--ink); background: var(--gold); border-radius: 999px;
+            padding: 0 16px; font-weight: 600;
+        }
+        .top-links .nav-cta:hover { color: var(--ink); background: var(--gold-lite); }
+
+        .hero { padding: 56px 0 28px; }
+        .eyebrow {
+            display: inline-block; font-size: .72rem; letter-spacing: .16em;
+            text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 16px;
+        }
+        h1 {
+            font-family: var(--disp); font-weight: 700;
+            font-size: clamp(2rem, 6vw, 3.4rem);
+            line-height: 1.08; letter-spacing: -.03em; max-width: 14ch;
+        }
+        .lead { margin-top: 18px; max-width: 38rem; color: var(--dim); font-size: 1.05rem; }
+
+        .bill-wrap { padding: 8px 0 28px; }
+        .bill {
+            display: inline-flex; align-items: center; padding: 4px;
+            background: var(--panel); border: 1px solid var(--line); border-radius: 999px;
+        }
+        .bill button {
+            appearance: none; border: 0; background: transparent; color: var(--dim);
+            font: 600 0.92rem/1 var(--sans); min-height: 44px; min-width: 44px;
+            padding: 0 18px; border-radius: 999px; cursor: pointer;
+            transition: background .4s var(--ease), color .4s var(--ease);
+        }
+        .bill button[aria-pressed="true"] { background: var(--gold); color: var(--ink); }
+        .bill-note { margin-top: 12px; color: var(--dim); font-size: .9rem; min-height: 1.4em; }
+
+        .plans { display: grid; gap: 16px; grid-template-columns: 1fr; }
+        .plan {
+            display: flex; flex-direction: column;
+            background: var(--panel); border: 1px solid var(--line);
+            border-radius: 20px; padding: 26px 22px 24px;
+        }
+        .plan.popular {
+            border-color: rgba(217, 176, 108, .55);
+            box-shadow: 0 0 0 1px rgba(217, 176, 108, .18);
+        }
+        .plan-tag {
+            display: inline-flex; align-items: center; align-self: flex-start;
+            min-height: 28px; margin-bottom: 12px; padding: 0 10px; border-radius: 999px;
+            background: var(--gold); color: var(--ink);
+            font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+        }
+        .plan h2 { font-family: var(--disp); font-size: 1.45rem; font-weight: 600; letter-spacing: -.02em; }
+        .price { display: grid; margin: 14px 0 6px; min-height: 3.1em; }
+        .price-month, .price-year {
+            grid-area: 1 / 1;
+            font-family: var(--disp); font-weight: 700; font-size: 2.15rem;
+            letter-spacing: -.03em; line-height: 1.1;
+            transition: opacity .4s var(--ease);
+        }
+        .price small { font-family: var(--sans); font-size: 1rem; font-weight: 500; color: var(--dim); }
+        html[data-bill="year"] .price-month { opacity: 0; }
+        html[data-bill="month"] .price-year,
+        html:not([data-bill]) .price-year { opacity: 0; }
+        .save {
+            min-height: 1.4em; font-size: .86rem; color: var(--gold); font-weight: 500;
+            opacity: 0; transition: opacity .4s var(--ease);
+        }
+        html[data-bill="year"] .save { opacity: 1; }
+        .features { list-style: none; margin: 16px 0 22px; display: grid; gap: 14px; }
+        .features li { padding-left: 1.15em; position: relative; }
+        .features li::before {
+            content: ""; position: absolute; left: 0; top: .55em;
+            width: 7px; height: 7px; border-radius: 50%; background: var(--gold);
+        }
+        .features .what { display: block; margin-top: 3px; color: var(--dim); font-size: .88rem; }
+        .plan .btn { margin-top: auto; width: 100%; }
+
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+            min-height: 48px; padding: 12px 18px; border-radius: 999px;
+            font: 600 .95rem/1 var(--sans); text-decoration: none; color: var(--text);
+            border: 0; cursor: pointer;
+            transition: background .4s var(--ease), color .4s var(--ease), border-color .4s var(--ease);
+        }
+        .btn-gold { background: var(--gold); color: var(--ink); }
+        .btn-gold:hover { background: var(--gold-lite); }
+        .btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--line); }
+        .btn-ghost:hover { border-color: var(--gold); color: var(--gold-lite); }
+
+        .setup {
+            margin: 28px 0 8px; padding: 18px 20px;
+            border: 1px dashed rgba(217, 176, 108, .45); border-radius: 14px;
+            text-align: center; font-size: 1.02rem;
+        }
+
+        .compare { padding: 48px 0 12px; }
+        .compare h2, .faq h2, .cta h2 {
+            font-family: var(--disp); font-size: clamp(1.45rem, 3vw, 2rem);
+            letter-spacing: -.02em; margin-bottom: 10px;
+        }
+        .compare .sub, .cta p { color: var(--dim); margin-bottom: 18px; max-width: 38rem; }
+        .cmp-wrap { margin-top: 8px; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+        .cmp { width: 100%; border-collapse: collapse; table-layout: fixed; }
+        .cmp th, .cmp td {
+            padding: 11px 8px; font-size: .82rem; text-align: center;
+            border-bottom: 1px solid var(--line); vertical-align: middle;
+            word-wrap: break-word; overflow-wrap: anywhere;
+        }
+        .cmp thead th {
+            background: var(--bg-soft); font-family: var(--disp); font-weight: 600; font-size: .8rem;
+        }
+        .cmp th:first-child, .cmp td:first-child {
+            text-align: left; width: 42%; color: var(--text); font-weight: 500;
+            position: sticky; left: 0; background: var(--bg);
+        }
+        .cmp thead th:first-child { background: var(--bg-soft); }
+        .cmp tbody tr:last-child td { border-bottom: 0; }
+        .cmp .yes { color: var(--gold-lite); font-weight: 600; }
+        .cmp .no { color: var(--dim); }
+
+        .faq { padding: 52px 0 12px; }
+        .faq-list { margin-top: 18px; border-top: 1px solid var(--line); }
+        details { border-bottom: 1px solid var(--line); }
+        summary {
+            list-style: none; cursor: pointer; font-weight: 600;
+            min-height: 52px; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+            padding: 14px 0;
+        }
+        summary::-webkit-details-marker { display: none; }
+        summary::after {
+            content: ""; width: 10px; height: 10px; flex: none;
+            border-right: 2px solid var(--gold); border-bottom: 2px solid var(--gold);
+            transform: rotate(45deg); transition: transform .4s var(--ease);
+        }
+        details[open] summary::after { transform: rotate(225deg); }
+        details p { color: var(--dim); padding: 0 0 16px; max-width: 42rem; }
+
+        .cta { padding: 52px 0 72px; }
+        .socials { display: flex; flex-wrap: wrap; gap: 10px; }
+        .social {
+            display: inline-flex; align-items: center; gap: 10px;
+            min-height: 48px; padding: 0 16px; border-radius: 12px;
+            border: 1px solid var(--line); background: var(--panel);
+            color: var(--text); text-decoration: none; font-weight: 600; font-size: .92rem;
+            transition: border-color .4s var(--ease), background .4s var(--ease);
+        }
+        .social:hover { border-color: var(--gold); background: rgba(217, 176, 108, .08); }
+        .social svg { width: 20px; height: 20px; flex: none; }
+
+        .dim {
+            position: fixed; inset: 0; z-index: 80;
+            background: rgba(5, 6, 10, .72);
+            opacity: 0; pointer-events: none;
+            transition: opacity .4s var(--ease);
+        }
+        .dim.is-on { opacity: 1; pointer-events: auto; }
+        .sheet {
+            position: fixed; z-index: 90; left: 50%; top: 50%;
+            width: min(440px, calc(100% - 32px));
+            max-height: calc(100vh - 32px); overflow: auto;
+            background: #10131b; border: 1px solid var(--line); border-radius: 20px;
+            padding: 24px 22px 22px;
+            transform: translate(-50%, -46%) scale(.98);
+            opacity: 0; pointer-events: none;
+            transition: opacity .4s var(--ease), transform .4s var(--ease);
+        }
+        .sheet.is-on {
+            opacity: 1; pointer-events: auto;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .sheet h2 { font-family: var(--disp); font-size: 1.4rem; margin-bottom: 6px; }
+        .sheet p { color: var(--dim); margin-bottom: 18px; }
+        .sheet .socials { flex-direction: column; }
+        .sheet .social { width: 100%; justify-content: flex-start; }
+        .sheet-close {
+            margin-top: 14px; width: 100%;
+        }
+
+        footer {
+            border-top: 1px solid var(--line); padding: 28px 0 40px;
+            color: var(--dim); font-size: .88rem;
+        }
+        footer .foot {
+            display: flex; flex-wrap: wrap; align-items: center;
+            justify-content: space-between; gap: 12px 20px;
+        }
+        footer nav { display: flex; flex-wrap: wrap; gap: 4px 2px; }
+        footer a {
+            display: inline-flex; align-items: center; min-height: 44px; padding: 0 8px;
+            color: var(--dim); text-decoration: none;
+        }
+        footer a:hover { color: var(--gold); }
+
+        @media (max-width: 640px) {
+            .top-links a:not(.nav-cta) { display: none; }
+            .sheet {
+                left: 0; right: 0; top: auto; bottom: 0;
+                width: 100%; max-height: min(85vh, calc(100% - 72px));
+                border-radius: 20px 20px 0 0;
+                transform: translateY(16px) scale(1);
+            }
+            .sheet.is-on { transform: translateY(0) scale(1); }
+        }
+        @media (min-width: 780px) {
+            .plans { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+            .plan { padding: 30px 24px 26px; }
+            .hero { padding-top: 72px; }
+            .cmp th, .cmp td { padding: 12px 10px; font-size: .9rem; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { transition-duration: .01ms !important; }
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://langkahpertama.website/#business",
+      "name": "Langkah Pertama",
+      "url": "https://langkahpertama.website/",
+      "image": "https://langkahpertama.website/assets/og-image-2.png",
+      "logo": "https://langkahpertama.website/assets/icon-512.png",
+      "description": "Studio web kecil di Malaysia. Kami buat e-kad kahwin digital, menu QR dan laman web untuk kedai serta bisnes kecil. Berkhidmat di Negeri Sembilan dan seluruh Malaysia.",
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Negeri Sembilan" },
+        { "@type": "Country", "name": "Malaysia" }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/_langkahpertama_/",
+        "https://www.tiktok.com/@langkahpertama26",
+        "https://www.facebook.com/profile.php?id=61595196002458",
+        "https://www.threads.net/@_langkahpertama_",
+        "https://x.com/LangkahPertama0"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://langkahpertama.website/harga/#webpage",
+      "url": "https://langkahpertama.website/harga/",
+      "name": "Harga & Pelan — Langkah Pertama",
+      "description": "Harga dan pelan jagaan laman web Langkah Pertama. Asas RM29, Bisnes RM59, Pro RM99 sebulan. Bayar setahun, 2 bulan percuma. Hosting, SSL, backup dan kemaskini. DM kami untuk tanya.",
+      "isPartOf": { "@id": "https://langkahpertama.website/#business" },
+      "inLanguage": "ms"
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+<a class="skip" href="#isi">Langkau ke kandungan</a>
+<div class="wrap">
+    <header class="top">
+        <a class="brand" href="/" aria-label="Langkah Pertama — laman utama">
+            <img src="/assets/lp-mark-gold.png" width="183" height="188" alt="Logo Langkah Pertama">
+            <span class="brand-name">Langkah Pertama<small>Studio Web</small></span>
+        </a>
+        <nav class="top-links" aria-label="Navigasi">
+            <a href="/kahwin/">Untuk Pasangan</a>
+            <a href="/kedai/">Untuk Kedai</a>
+            <a class="nav-cta" href="#hubungi">Hubungi kami</a>
+        </nav>
+    </header>
+
+    <main id="isi">
+        <header class="hero">
+            <span class="eyebrow">Harga &amp; Pelan</span>
+            <h1>Harga yang jelas, pelan yang mudah difahami.</h1>
+            <p class="lead">Tiga pelan jagaan laman web: hosting, SSL, backup dan kemaskini. Pilih bayaran bulanan, atau bayar setahun dan dapat 2 bulan percuma.</p>
+        </header>
+
+        <div class="bill-wrap">
+            <div class="bill" role="group" aria-label="Cara bayar">
+                <button type="button" id="billMonth" aria-pressed="true">Bulanan</button>
+                <button type="button" id="billYear" aria-pressed="false">Tahunan</button>
+            </div>
+            <p class="bill-note" id="billNote">Harga di bawah untuk bayaran setiap bulan.</p>
+        </div>
+
+        <section class="plans" aria-label="Tiga pelan jagaan">
+            <article class="plan" aria-labelledby="p-asas">
+                <h2 id="p-asas">Asas</h2>
+                <p class="price">
+                    <span class="price-month">RM29 <small>/bulan</small></span>
+                    <span class="price-year">RM290 <small>/tahun</small></span>
+                </p>
+                <p class="save">2 bulan percuma</p>
+                <ul class="features">
+                    <li>Hosting dan SSL<span class="what">Apa maksudnya: laman web anda dihoskan dengan sambungan selamat (HTTPS).</span></li>
+                    <li>Pemantauan uptime<span class="what">Apa maksudnya: kalau laman web turun, kami dapat amaran dan kami baiki. Ini pemantauan, bukan jaminan tiada gangguan.</span></li>
+                    <li>Backup setiap bulan<span class="what">Apa maksudnya: kami simpan salinan, supaya laman web boleh dipulihkan jika perlu.</span></li>
+                    <li>1 perubahan kecil teks atau gambar sebulan<span class="what">Apa maksudnya: satu suntingan kecil — contohnya tukar ayat, betulkan ejaan, atau ganti satu gambar.</span></li>
+                </ul>
+                <button type="button" class="btn btn-ghost js-open" data-plan="Asas">Hubungi kami</button>
+            </article>
+
+            <article class="plan popular" aria-labelledby="p-bisnes">
+                <span class="plan-tag">Pilihan ramai</span>
+                <h2 id="p-bisnes">Bisnes</h2>
+                <p class="price">
+                    <span class="price-month">RM59 <small>/bulan</small></span>
+                    <span class="price-year">RM590 <small>/tahun</small></span>
+                </p>
+                <p class="save">2 bulan percuma</p>
+                <ul class="features">
+                    <li>Semua dalam Asas<span class="what">Termasuk hosting, SSL, pemantauan, backup, dan 1 jenis perubahan yang sama, dengan kuota yang lebih.</span></li>
+                    <li>Sehingga 5 perubahan sebulan<span class="what">Apa maksudnya: sampai lima suntingan kecil dalam sebulan, bukan lima laman web baru.</span></li>
+                    <li>Kemaskini menu atau harga<span class="what">Apa maksudnya: kami ubah senarai menu atau harga yang anda beritahu.</span></li>
+                    <li>Setup Google Business Profile<span class="what">Apa maksudnya: kedai anda boleh muncul di Google Maps dan Carian Google.</span></li>
+                    <li>Laporan pelawat setiap bulan<span class="what">Apa maksudnya: berapa orang lawat laman web anda, dan dari mana mereka datang.</span></li>
+                </ul>
+                <button type="button" class="btn btn-gold js-open" data-plan="Bisnes">Hubungi kami</button>
+            </article>
+
+            <article class="plan" aria-labelledby="p-pro">
+                <h2 id="p-pro">Pro</h2>
+                <p class="price">
+                    <span class="price-month">RM99 <small>/bulan</small></span>
+                    <span class="price-year">RM990 <small>/tahun</small></span>
+                </p>
+                <p class="save">2 bulan percuma</p>
+                <ul class="features">
+                    <li>Semua dalam Bisnes<span class="what">Termasuk kuota 5 perubahan, kemaskini menu atau harga, Google Business Profile, dan laporan pelawat.</span></li>
+                    <li>Satu bahagian atau halaman baru setiap suku tahun<span class="what">Apa maksudnya: setiap tiga bulan, kami tambah satu bahagian atau satu halaman baru pada laman web anda.</span></li>
+                    <li>Balasan keutamaan pada hari yang sama<span class="what">Apa maksudnya: kami utamakan mesej pelan Pro dan balas pada hari yang sama. Bukan janji 24 jam setiap hari.</span></li>
+                    <li>Ubah suai butang WhatsApp dan butang pesanan<span class="what">Apa maksudnya: kami kemaskini butang yang sudah ada di laman web anda. Tiada nombor atau pautan WhatsApp di halaman ini.</span></li>
+                </ul>
+                <button type="button" class="btn btn-ghost js-open" data-plan="Pro">Hubungi kami</button>
+            </article>
+        </section>
+
+        <p class="setup" id="yuran-setup">Yuran setup sekali sahaja: [TBC]</p>
+
+        <section class="compare" aria-labelledby="h-banding">
+            <h2 id="h-banding">Bandingkan pelan</h2>
+            <p class="sub">Ringkasan apa yang termasuk dalam setiap pelan.</p>
+            <div class="cmp-wrap">
+                <table class="cmp">
+                    <thead>
+                        <tr>
+                            <th scope="col">Termasuk</th>
+                            <th scope="col">Asas</th>
+                            <th scope="col">Bisnes</th>
+                            <th scope="col">Pro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Hosting dan SSL</th><td class="yes">Ada</td><td class="yes">Ada</td><td class="yes">Ada</td></tr>
+                        <tr><th scope="row">Pemantauan uptime</th><td class="yes">Ada</td><td class="yes">Ada</td><td class="yes">Ada</td></tr>
+                        <tr><th scope="row">Backup setiap bulan</th><td class="yes">Ada</td><td class="yes">Ada</td><td class="yes">Ada</td></tr>
+                        <tr><th scope="row">Perubahan sebulan</th><td>1</td><td>5</td><td>5</td></tr>
+                        <tr><th scope="row">Kemaskini menu atau harga</th><td class="no">—</td><td class="yes">Ada</td><td class="yes">Ada</td></tr>
+                        <tr><th scope="row">Setup Google Business Profile</th><td class="no">—</td><td class="yes">Ada</td><td class="yes">Ada</td></tr>
+                        <tr><th scope="row">Laporan pelawat bulanan</th><td class="no">—</td><td class="yes">Ada</td><td class="yes">Ada</td></tr>
+                        <tr><th scope="row">Bahagian atau halaman baru setiap suku tahun</th><td class="no">—</td><td class="no">—</td><td class="yes">Ada</td></tr>
+                        <tr><th scope="row">Balasan keutamaan hari yang sama</th><td class="no">—</td><td class="no">—</td><td class="yes">Ada</td></tr>
+                        <tr><th scope="row">Ubah suai butang WhatsApp dan pesanan</th><td class="no">—</td><td class="no">—</td><td class="yes">Ada</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="faq" aria-labelledby="h-soalan">
+            <h2 id="h-soalan">Soalan ringkas</h2>
+            <div class="faq-list">
+                <details>
+                    <summary>Apa yang dikira sebagai satu perubahan?</summary>
+                    <p>Satu suntingan kecil pada teks atau gambar. Contohnya: tukar ayat di halaman utama, betulkan ejaan, ganti satu gambar, atau kemaskini waktu buka. Pelan Asas: satu perubahan sebegitu sebulan. Pelan Bisnes dan Pro: sehingga lima. Halaman atau bahagian baru termasuk dalam pelan Pro, sekali setiap suku tahun — itu berasingan daripada kuota perubahan kecil.</p>
+                </details>
+                <details>
+                    <summary>Apa jadi kalau saya nak berhenti?</summary>
+                    <p>Polisi berhenti belum ditetapkan. [TBC]</p>
+                </details>
+                <details>
+                    <summary>Macam mana nak bayar?</summary>
+                    <p>Bayaran pelan adalah melalui PayPal.</p>
+                </details>
+                <details>
+                    <summary>Adakah ini termasuk buat laman web baru?</summary>
+                    <p>Pelan di atas adalah untuk jagaan. Yuran setup sekali sahaja ada di bawah kad pelan; jumlahnya belum ditetapkan.</p>
+                </details>
+                <details>
+                    <summary>Pemantauan uptime ni jaminan ke?</summary>
+                    <p>Bukan. Kami pantau laman web anda, dan kalau ia turun kami dapat amaran lalu kami baiki. Kami tidak jamin laman web sentiasa hidup tanpa gangguan.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="cta" id="hubungi" aria-labelledby="h-hubungi">
+            <h2 id="h-hubungi">Hubungi kami</h2>
+            <p>DM atau mesej kami di mana-mana akaun ini. Beritahu pelan yang anda minat, kami balas dari situ.</p>
+            <div class="socials" data-socials></div>
+        </section>
+    </main>
+</div>
+<footer>
+    <div class="wrap foot">
+        <nav aria-label="Pautan kaki">
+            <a href="/">Langkah Pertama</a>
+            <a href="/kahwin/">Untuk Pasangan</a>
+            <a href="/kedai/">Untuk Kedai</a>
+            <a href="/wedding/">E-Kad Kahwin</a>
+        </nav>
+        <p>&copy; 2026 Langkah Pertama</p>
+    </div>
+</footer>
+
+<div class="dim" id="hubungiDim" hidden></div>
+<div class="sheet" id="hubungiSheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" hidden>
+    <h2 id="sheetTitle">Hubungi kami</h2>
+    <p id="sheetLead">DM atau mesej kami di mana-mana akaun ini.</p>
+    <div class="socials" data-socials></div>
+    <button type="button" class="btn btn-ghost sheet-close" id="sheetClose">Tutup</button>
+</div>
+
+<script>
+(function () {
+    var root = document.documentElement;
+    var monthBtn = document.getElementById('billMonth');
+    var yearBtn = document.getElementById('billYear');
+    var note = document.getElementById('billNote');
+
+    function setBill(mode) {
+        root.setAttribute('data-bill', mode);
+        var yearly = mode === 'year';
+        monthBtn.setAttribute('aria-pressed', yearly ? 'false' : 'true');
+        yearBtn.setAttribute('aria-pressed', yearly ? 'true' : 'false');
+        note.textContent = yearly
+            ? 'Harga di bawah untuk bayaran sekali setahun. 2 bulan percuma.'
+            : 'Harga di bawah untuk bayaran setiap bulan.';
+    }
+    setBill('month');
+    monthBtn.addEventListener('click', function () { setBill('month'); });
+    yearBtn.addEventListener('click', function () { setBill('year'); });
+
+    var socials = [
+        { name: 'Instagram', href: 'https://www.instagram.com/_langkahpertama_/', label: 'DM di Instagram', svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>' },
+        { name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61595196002458', label: 'Mesej di Facebook', svg: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V5.5h-3c-2.5 0-4.5 2-4.5 4.5V12H7v3.5h2.5V22h3.5v-6.5H16L17 12h-3V10c0-.6.4-1 1-1z"/></svg>' },
+        { name: 'TikTok', href: 'https://www.tiktok.com/@langkahpertama26', label: 'DM di TikTok', svg: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.53.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>' },
+        { name: 'Threads', href: 'https://www.threads.net/@_langkahpertama_/', label: 'Mesej di Threads', svg: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.3 11.2c-.1-2.3-1.4-3.6-3.9-3.7-1.4-.1-3 .4-3.6 1.6l1.4.6c.3-.7 1.2-1 2.1-.9 1.5.1 2.2.8 2.3 2.2-1-.5-2.1-.6-3.2-.3-1.8.5-3 1.9-2.9 3.6.1 1.8 1.5 2.8 3.1 2.8 1.3 0 2.3-.5 2.9-1.4.4.8.9 1.5 1.7 2l.9-1.2c-.6-.5-1-1.1-1.3-1.8.4-.7.6-1.5.5-2.5zm-3.5 3.6c-.9 0-1.6-.5-1.6-1.3 0-1.2 1.1-1.6 2.4-1.3.5.1 1 .4 1.4.7 0 1.2-.9 1.9-2.2 1.9z"/></svg>' },
+        { name: 'X', href: 'https://x.com/LangkahPertama0', label: 'Mesej di X', svg: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.2 3h2.9l-6.3 7.2L21.5 21h-5.5l-4.3-5.6L6.4 21H3.5l6.8-7.7L2.7 3h5.6l3.9 5.1L17.2 3zm-1 16.2h1.6L8 4.7H6.3l9.9 14.5z"/></svg>' }
+    ];
+
+    function socialHtml() {
+        return socials.map(function (s) {
+            return '<a class="social" href="' + s.href + '" target="_blank" rel="noopener noreferrer" aria-label="' + s.label + '">' + s.svg + '<span>' + s.name + '</span></a>';
+        }).join('');
+    }
+    document.querySelectorAll('[data-socials]').forEach(function (el) {
+        el.innerHTML = socialHtml();
+    });
+
+    var dim = document.getElementById('hubungiDim');
+    var sheet = document.getElementById('hubungiSheet');
+    var closeBtn = document.getElementById('sheetClose');
+    var lead = document.getElementById('sheetLead');
+    var lastFocus = null;
+    var openers = document.querySelectorAll('.js-open');
+
+    function openSheet(plan) {
+        lastFocus = document.activeElement;
+        lead.textContent = plan
+            ? 'Untuk pelan ' + plan + ' — DM atau mesej kami di mana-mana akaun ini.'
+            : 'DM atau mesej kami di mana-mana akaun ini.';
+        dim.hidden = false;
+        sheet.hidden = false;
+        requestAnimationFrame(function () {
+            dim.classList.add('is-on');
+            sheet.classList.add('is-on');
+        });
+        document.body.classList.add('is-dimmed');
+        openers.forEach(function (b) { b.setAttribute('aria-expanded', 'true'); });
+        var first = sheet.querySelector('a, button');
+        if (first) first.focus();
+    }
+    function closeSheet() {
+        dim.classList.remove('is-on');
+        sheet.classList.remove('is-on');
+        document.body.classList.remove('is-dimmed');
+        openers.forEach(function (b) { b.setAttribute('aria-expanded', 'false'); });
+        setTimeout(function () {
+            if (!sheet.classList.contains('is-on')) {
+                dim.hidden = true;
+                sheet.hidden = true;
+            }
+        }, 400);
+        if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    openers.forEach(function (btn) {
+        btn.setAttribute('aria-haspopup', 'dialog');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-controls', 'hubungiSheet');
+        btn.addEventListener('click', function () { openSheet(btn.getAttribute('data-plan')); });
+    });
+    closeBtn.addEventListener('click', closeSheet);
+    dim.addEventListener('click', closeSheet);
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && sheet.classList.contains('is-on')) {
+            e.preventDefault();
+            closeSheet();
+            return;
+        }
+        if (e.key !== 'Tab' || !sheet.classList.contains('is-on')) return;
+        var list = Array.prototype.slice.call(sheet.querySelectorAll('a, button'));
+        if (!list.length) return;
+        var first = list[0];
+        var last = list[list.length - 1];
+        if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+        else if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    });
+})();
+</script>
+</body>
+</html>
