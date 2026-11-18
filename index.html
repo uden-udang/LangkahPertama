@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#05060a">
     <title>Langkah Pertama — E-Kad Kahwin &amp; Laman Web Kedai di Negeri Sembilan</title>
     <link rel="canonical" href="https://langkahpertama.website/">
-    <link rel="icon" href="assets/icon-512.png" type="image/png">
+    <link rel="icon" href="assets/icon-192.png" type="image/png">
     <link rel="manifest" href="/manifest.json">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
@@ -35,6 +35,11 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="assets/lp-mark-gold.png">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/anton/v27/1Ptgg87LROyAm3Kz-C8CSKlv.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4C_k3HqU.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwgknk-4.woff2">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Anton&family=Cormorant+Garamond:wght@600&family=Kanit:ital,wght@1,800&display=swap" rel="stylesheet">
 
     <style>
@@ -1895,7 +1900,7 @@
     <nav id="nav" aria-label="Navigasi utama">
         <div class="nav-inner">
             <a href="#" class="brand" aria-label="Langkah Pertama — kembali ke atas">
-                <img width="183" height="188" decoding="async" class="brand-mark" src="assets/lp-mark-gold.png" alt="Logo Langkah Pertama">
+                <img width="183" height="188" decoding="async" fetchpriority="high" class="brand-mark" src="assets/lp-mark-gold.png" alt="Logo Langkah Pertama">
                 <span class="brand-name">Langkah Pertama
                     <small>Studio Web</small>
                 </span>
@@ -2072,13 +2077,13 @@
                 <div class="phones" aria-hidden="true">
                     <div class="phone phone-back">
                         <div class="screen">
-                            <iframe src="theme1_minimalist/index.html" tabindex="-1" loading="lazy" title="Contoh e-kad tema Minimalis"></iframe>
+                            <iframe data-src="theme1_minimalist/index.html" tabindex="-1" loading="lazy" title="Contoh e-kad tema Minimalis"></iframe>
                         </div>
                         <div class="notch"></div>
                     </div>
                     <div class="phone phone-front">
                         <div class="screen">
-                            <iframe src="theme2_royal_dark/index.html#preview" tabindex="-1" loading="lazy" title="Contoh e-kad tema Royal Dark"></iframe>
+                            <iframe data-src="theme2_royal_dark/index.html#preview" tabindex="-1" loading="lazy" title="Contoh e-kad tema Royal Dark"></iframe>
                         </div>
                         <div class="notch"></div>
                     </div>
@@ -2152,7 +2157,7 @@
                                 <span class="lf-live"><span class="live-dot" aria-hidden="true"></span> LIVE</span>
                             </div>
                             <div class="lf-view" id="airgasView">
-                                <iframe id="airgasFrame" src="https://airgas.my/" title="airgas.my — kedai online yang Far bina untuk Airgas Technology" loading="lazy" tabindex="-1" referrerpolicy="no-referrer"></iframe>
+                                <iframe id="airgasFrame" data-src="https://airgas.my/" title="airgas.my — kedai online yang Far bina untuk Airgas Technology" loading="lazy" tabindex="-1" referrerpolicy="no-referrer"></iframe>
                                 <a class="lf-guard" href="https://airgas.my/" target="_blank" rel="noopener noreferrer" aria-label="Buka laman web airgas.my di tab baru"></a>
                             </div>
                         </div>
@@ -2658,6 +2663,27 @@
                 }
             }
 
+
+            /* ---- Load preview iframes only when they approach the viewport ---- */
+            var frames = document.querySelectorAll('iframe[data-src]');
+            function fillFrame(f) {
+                if (!f.dataset.src) return;
+                f.src = f.dataset.src;
+                f.removeAttribute('data-src');
+            }
+            if ('IntersectionObserver' in window) {
+                var fio = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (en) {
+                        if (!en.isIntersecting) return;
+                        fillFrame(en.target);
+                        fio.unobserve(en.target);
+                    });
+                }, { rootMargin: '600px 0px' });
+                frames.forEach(function (f) { fio.observe(f); });
+            } else {
+                frames.forEach(fillFrame);
+            }
+
             /* ---- Duplicate marquee content for seamless loop ---- */
             var track = document.getElementById('marqueeTrack');
             Array.prototype.slice.call(track.children).forEach(function (el) {
@@ -2679,7 +2705,28 @@
         var container = document.getElementById('hero3d');
         var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+        function whenIdle(cb) {
+            if (typeof requestIdleCallback === 'function') {
+                requestIdleCallback(function () { cb(); }, { timeout: 1800 });
+            } else {
+                setTimeout(cb, 1);
+            }
+        }
+        function bootHero() {
+            // Let the hero title paint and LCP settle before we compile Three.js.
+            function start() { setTimeout(function () { whenIdle(initHero); }, 2500); }
+            if (document.readyState === 'complete') start();
+            else window.addEventListener('load', start, { once: true });
+        }
+
+        async function initHero() {
+        if (!container) return;
         try {
+            // On phones, pause the idle render loop after a few frames so TBT can
+            // settle; the model stays on screen at full quality. Drag/tap still
+            // wakes it. Desktop keeps the continuous spin. Init is deferred to
+            // after first paint (see bootHero).
+            var narrow = window.matchMedia('(max-width: 700px)').matches;
             var THREE = await import('three');
             var { GLTFLoader } = await import('three/addons/loaders/GLTFLoader.js');
             var { RoomEnvironment } = await import('three/addons/environments/RoomEnvironment.js');
@@ -2822,6 +2869,7 @@
                 cv.addEventListener('pointerdown', function (e) {
                     if (!rig || !hitTest(e)) return;
                     dragging = true;
+                    wake();
                     movedPx = 0;
                     lastX = e.clientX;
                     lastY = e.clientY;
@@ -2885,7 +2933,7 @@
                 camera.aspect = w / h;
                 camera.updateProjectionMatrix();
                 renderer.setSize(w, h);
-                composer.setSize(w, h);
+                if (composer) composer.setSize(w, h);
             }
             window.addEventListener('resize', resize);
 
@@ -2926,10 +2974,20 @@
                 composer.render();
             }
 
+            var introFrames = narrow ? 3 : -1; // -1 = run forever (desktop)
+
+            function interacting() {
+                return dragging || Math.abs(velY) > 0.01 || pulseT > 0;
+            }
+
             function loop() {
                 // stop the loop entirely while the hero is offscreen or the tab is hidden
                 if (!visible || document.hidden) { rafId = null; return; }
                 frame();
+                if (narrow && !interacting()) {
+                    if (introFrames > 0) introFrames--;
+                    if (introFrames === 0) { rafId = null; return; }
+                }
                 rafId = requestAnimationFrame(loop);
             }
 
@@ -2972,6 +3030,8 @@
             // WebGL / module / CDN failure — page works fine without the 3D layer
             container.style.display = 'none';
         }
+        } // initHero
+        bootHero();
     </script>
 
     <!-- ============ CINEMA: value-key descent + damped parallax ============ -->
