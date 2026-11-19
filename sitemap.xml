@@ -1,19 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://langkahpertama.website/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="ms-MY" href="https://langkahpertama.website/"/>
+    <xhtml:link rel="alternate" hreflang="en-MY" href="https://langkahpertama.website/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langkahpertama.website/"/>
   </url>
   <url>
     <loc>https://langkahpertama.website/kahwin/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="ms-MY" href="https://langkahpertama.website/kahwin/"/>
+    <xhtml:link rel="alternate" hreflang="en-MY" href="https://langkahpertama.website/en/wedding-cards/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langkahpertama.website/kahwin/"/>
   </url>
   <url>
     <loc>https://langkahpertama.website/kedai/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="ms-MY" href="https://langkahpertama.website/kedai/"/>
+    <xhtml:link rel="alternate" hreflang="en-MY" href="https://langkahpertama.website/en/shops/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langkahpertama.website/kedai/"/>
   </url>
   <url>
     <loc>https://langkahpertama.website/wedding/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="ms-MY" href="https://langkahpertama.website/wedding/"/>
+    <xhtml:link rel="alternate" hreflang="en-MY" href="https://langkahpertama.website/en/wedding-themes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langkahpertama.website/wedding/"/>
+  </url>
+  <url>
+    <loc>https://langkahpertama.website/harga/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="ms-MY" href="https://langkahpertama.website/harga/"/>
+    <xhtml:link rel="alternate" hreflang="en-MY" href="https://langkahpertama.website/en/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langkahpertama.website/harga/"/>
+  </url>
+  <url>
+    <loc>https://langkahpertama.website/en/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="ms-MY" href="https://langkahpertama.website/"/>
+    <xhtml:link rel="alternate" hreflang="en-MY" href="https://langkahpertama.website/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langkahpertama.website/"/>
+  </url>
+  <url>
+    <loc>https://langkahpertama.website/en/wedding-cards/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="ms-MY" href="https://langkahpertama.website/kahwin/"/>
+    <xhtml:link rel="alternate" hreflang="en-MY" href="https://langkahpertama.website/en/wedding-cards/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langkahpertama.website/kahwin/"/>
+  </url>
+  <url>
+    <loc>https://langkahpertama.website/en/shops/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="ms-MY" href="https://langkahpertama.website/kedai/"/>
+    <xhtml:link rel="alternate" hreflang="en-MY" href="https://langkahpertama.website/en/shops/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langkahpertama.website/kedai/"/>
+  </url>
+  <url>
+    <loc>https://langkahpertama.website/en/wedding-themes/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="ms-MY" href="https://langkahpertama.website/wedding/"/>
+    <xhtml:link rel="alternate" hreflang="en-MY" href="https://langkahpertama.website/en/wedding-themes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langkahpertama.website/wedding/"/>
+  </url>
+  <url>
+    <loc>https://langkahpertama.website/en/pricing/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="ms-MY" href="https://langkahpertama.website/harga/"/>
+    <xhtml:link rel="alternate" hreflang="en-MY" href="https://langkahpertama.website/en/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://langkahpertama.website/harga/"/>
   </url>
 </urlset>
