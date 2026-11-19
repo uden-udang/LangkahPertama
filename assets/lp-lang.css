@@ -1,0 +1,88 @@
+/* Shared BM | EN language switch. Inherits header colour. */
+.brand-cluster {
+    display: flex;
+    align-items: center;
+    gap: 2px 8px;
+    min-width: 0;
+    flex-shrink: 1;
+}
+nav.lang,
+.lang {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    z-index: auto;
+    display: inline-flex;
+    align-items: center;
+    flex: 0 0 auto;
+    flex-shrink: 0;
+    width: max-content;
+    max-width: 100%;
+    margin: 0;
+    border: 0;
+    background: none;
+    gap: 0;
+}
+.lang a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0 6px;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    opacity: 0.55;
+    white-space: nowrap;
+}
+.lang a:hover,
+.lang a:focus-visible {
+    opacity: 1;
+}
+.lang a[aria-current="true"] {
+    opacity: 1;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.lang-sep {
+    opacity: 0.4;
+    user-select: none;
+    pointer-events: none;
+    font-size: 0.72rem;
+    line-height: 1;
+    padding: 0 1px;
+}
+/* Make room for the switch on tight headers: keep the logo, hide the wordmark. */
+@media (max-width: 700px) {
+    #nav .brand-name { display: none; }
+}
+@media (max-width: 640px) {
+    .top .brand-name,
+    header.top .brand > span,
+    .bar .brand > span { display: none; }
+}
+/* Wedding catalog: group switch with the existing Harga/Pricing pill */
+.wedding-lang-row {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    z-index: 10;
+}
+.wedding-lang-row .nav-harga,
+.wedding-lang-row .nav-pricing {
+    position: static;
+    top: auto;
+    right: auto;
+}
+@media (max-width: 768px) {
+    .wedding-lang-row { top: 16px; right: 16px; }
+}

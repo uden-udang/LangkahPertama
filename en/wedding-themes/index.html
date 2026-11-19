@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://cdn.jsdelivr.net; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Digital Wedding Card Themes — Langkah Pertama</title>
+    <link rel="canonical" href="https://langkahpertama.website/en/wedding-themes/">
+    <link rel="alternate" hreflang="ms-MY" href="https://langkahpertama.website/wedding/">
+    <link rel="alternate" hreflang="en-MY" href="https://langkahpertama.website/en/wedding-themes/">
+    <link rel="alternate" hreflang="x-default" href="https://langkahpertama.website/wedding/">
+    <link rel="stylesheet" href="/assets/lp-lang.css">
+    <link rel="icon" href="/assets/icon-512.png" type="image/png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+    <!-- Open Graph / WhatsApp / Telegram Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_MY">
+    <meta property="og:site_name" content="Langkah Pertama">
+    <meta property="og:url" content="https://langkahpertama.website/en/wedding-themes/">
+    <meta property="og:title" content="8 Digital Wedding Card Themes — Langkah Pertama">
+    <meta property="og:description" content="Choose a Langkah Pertama digital wedding card theme. Eight designs, Theme E-Card RM30. Preview a demo first, free.">
+    <meta property="og:image" content="https://langkahpertama.website/assets/og-image-2.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card (also used by Telegram) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="8 Digital Wedding Card Themes — Langkah Pertama">
+    <meta name="twitter:description" content="Choose a Langkah Pertama digital wedding card theme. Eight designs, Theme E-Card RM30. Preview a demo first, free.">
+    <meta name="twitter:image" content="https://langkahpertama.website/assets/og-image-2.png">
+
+    <!-- General Meta -->
+    <meta name="description" content="Choose a Langkah Pertama digital wedding card theme. Eight designs, Theme E-Card RM30. Preview a demo first, free. For couples in Negeri Sembilan and Malaysia.">
+
+    <!-- Modern Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #cba87c;
+            --primary-dark: #967d5b;
+            --bg-body: #faf8f5;
+            --text-dark: #2d2a26;
+            --text-light: #706f6c;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        a:focus-visible {
+            outline: 2px solid var(--primary-dark);
+            outline-offset: 3px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Back to main page */
+        .back-home {
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            padding: 10px 18px;
+            min-height: 40px;
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 30px;
+            background: #fff;
+            transition: all 0.3s;
+            z-index: 10;
+        }
+
+        .back-home:hover {
+            color: var(--primary-dark);
+            border-color: var(--primary);
+            box-shadow: 0 5px 20px rgba(203, 168, 124, 0.25);
+        }
+        .nav-harga {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            padding: 10px 18px;
+            min-height: 44px;
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 30px;
+            background: #fff;
+            transition: all 0.3s;
+            z-index: 10;
+        }
+        .nav-harga:hover {
+            color: var(--primary-dark);
+            border-color: var(--primary);
+            box-shadow: 0 5px 20px rgba(203, 168, 124, 0.25);
+        }
+
+        /* Back to top */
+        .to-top {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 50;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 1px solid var(--primary);
+            background: #fff;
+            color: var(--primary-dark);
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(14px);
+            transition: opacity 0.4s, transform 0.4s, visibility 0.4s, background 0.3s, color 0.3s;
+        }
+        .to-top.show { opacity: 1; visibility: visible; transform: none; }
+        .to-top:hover {
+            background: var(--primary);
+            color: #fff;
+            box-shadow: 0 8px 24px rgba(203, 168, 124, 0.45);
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .to-top { transition: none; }
+        }
+
+        /* Nav & Header */
+        header {
+            text-align: center;
+            padding: 50px 20px 40px;
+            background: linear-gradient(to bottom, #fff, var(--bg-body));
+            position: relative;
+        }
+
+        .logo-container {
+            max-width: 250px;
+            margin: 0 auto 20px;
+            padding: 10px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            mix-blend-mode: multiply;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+
+        .arkib-link { margin: 18px 0 0; }
+        .arkib-link a { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 20px; border: 1px solid var(--primary); border-radius: 999px; color: var(--primary-dark); font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: background 0.25s, color 0.25s; }
+        .arkib-link a:hover { background: var(--primary); color: #fff; }
+
+        /* Catalog Grid */
+        .catalog-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px 100px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+            gap: 40px;
+        }
+
+        .theme-card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .theme-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 50px rgba(203, 168, 124, 0.2);
+        }
+
+        .theme-image-wrapper {
+            height: 380px; /* Taller for better preview */
+            overflow: hidden;
+            position: relative;
+            background: #111;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .theme-image-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0;
+            /* Render the page at 4x the wrapper size, then shrink to fit:
+               shows the full desktop-style layout as a zoomed-out thumbnail */
+            width: 400%;
+            height: 400%;
+            transform: scale(0.25);
+            transform-origin: top left;
+            border: none;
+            pointer-events: none;
+            transition: opacity 0.5s ease;
+        }
+
+        .theme-image-wrapper .cover-iframe {
+            opacity: 1;
+            z-index: 2;
+        }
+
+        .theme-image-wrapper .preview-iframe {
+            opacity: 0;
+            z-index: 1;
+        }
+
+        /* On Hover: Hide static cover, show animated iframe */
+        .theme-card:hover .theme-image-wrapper .cover-iframe {
+            opacity: 0;
+        }
+
+        .theme-card:hover .theme-image-wrapper .preview-iframe {
+            opacity: 1;
+            z-index: 3;
+        }
+
+        /* Removing the old img-overlay since iframes provide the actual look */
+
+        .theme-details {
+            padding: 35px 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .theme-tags {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .theme-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .theme-desc {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .view-btn {
+            display: inline-block;
+            background: var(--text-dark);
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-align: center;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .view-btn::after {
+            content: "→";
+            margin-left: 8px;
+            transition: margin 0.3s;
+        }
+
+        .view-btn:hover {
+            background: var(--primary);
+            box-shadow: 0 5px 20px rgba(203, 168, 124, 0.4);
+        }
+
+        .view-btn:hover::after {
+            margin-left: 12px;
+        }
+
+        /* Animations */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+
+        footer img {
+            height: 40px;
+            width: auto;
+            margin-bottom: 15px;
+            opacity: 0.9;
+            background: #fff;
+            padding: 5px 15px;
+            border-radius: 8px;
+            mix-blend-mode: multiply;
+        }
+        footer p {
+            color: #b5b0a8;
+            font-size: 0.9rem;
+        }
+
+        footer .footer-home-link {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 10px;
+            margin-inline: 6px;
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            min-height: 44px;
+            padding: 0 8px;
+        }
+
+        footer .footer-home-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .catalog-container { gap: 30px; padding: 20px 20px 80px; }
+            header { padding: 90px 20px 40px; }
+            .back-home { top: 16px; left: 16px; padding: 8px 14px; min-height: 44px; }
+            .nav-harga { top: 16px; right: 16px; padding: 8px 14px; }
+        }
+    </style>
+    <style id="lp-a11y">.lp-skip{position:fixed;top:10px;left:10px;z-index:99999;background:#0c0d11;color:#fff;padding:11px 18px;border-radius:8px;font:600 14px/1 system-ui,-apple-system,"Segoe UI",sans-serif;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.35);transform:translateY(-160%);transition:transform .18s ease}.lp-skip:focus{transform:none;outline:2px solid #fff;outline-offset:2px}@media (prefers-reduced-motion:reduce){.lp-skip{transition:none}}</style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://langkahpertama.website/#business",
+      "name": "Langkah Pertama",
+      "url": "https://langkahpertama.website/",
+      "image": "https://langkahpertama.website/assets/og-image-2.png",
+      "logo": "https://langkahpertama.website/assets/icon-512.png",
+      "description": "A small web studio in Malaysia. We make digital wedding cards, QR menus and websites for shops and small businesses. We serve Negeri Sembilan and the rest of Malaysia.",
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Negeri Sembilan"
+        },
+        {
+          "@type": "Country",
+          "name": "Malaysia"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/_langkahpertama_/",
+        "https://www.tiktok.com/@langkahpertama26",
+        "https://www.facebook.com/profile.php?id=61595196002458"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://langkahpertama.website/en/wedding-themes/#webpage",
+      "url": "https://langkahpertama.website/en/wedding-themes/",
+      "name": "8 Digital Wedding Card Themes — Langkah Pertama",
+      "description": "Choose a Langkah Pertama digital wedding card theme. Eight designs, Theme E-Card RM30. Preview a demo first, free. For couples in Negeri Sembilan and Malaysia.",
+      "isPartOf": {
+        "@id": "https://langkahpertama.website/#business"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+<a href="#lp-main" class="lp-skip">Skip to content</a>
+
+
+    <header>
+        <a href="/en/" class="back-home">← Home</a>
+        <div class="wedding-lang-row">
+        <nav class="lang" aria-label="Language">
+            <a href="/wedding/" lang="ms" hreflang="ms-MY" aria-label="Bahasa Melayu">BM</a>
+            <span class="lang-sep" aria-hidden="true">|</span>
+            <a href="/en/wedding-themes/" lang="en" hreflang="en-MY" aria-label="English" aria-current="true">EN</a>
+        </nav>
+        <a href="/en/pricing/" class="nav-harga">Pricing</a>
+        </div>
+        <div class="logo-container">
+            <img loading="lazy" decoding="async" src="/assets/lp-wordmark-800.png" width="800" height="436" alt="Logo Langkah Pertama">
+        </div>
+        <h1>Langkah Pertama</h1>
+        <p class="subtitle">A collection of digital wedding invitation themes.<br>Pick a design that feels like your story.</p>
+        <p class="arkib-link"><a href="/arkib/">Event archive · real weddings &rarr;</a></p>
+    </header>
+<span id="lp-main" tabindex="-1"></span>
+
+    <div class="catalog-container">
+        <!-- Theme 1 -->
+        <div class="theme-card theme-1">
+            <div class="theme-image-wrapper">
+                <!-- Static Cover Iframe -->
+                <iframe src="/theme1_minimalist/index.html" class="cover-iframe" title="Preview Theme 1: Minimalist" tabindex="-1" loading="lazy"></iframe>
+                <!-- Auto-scrolling Preview Iframe (Hidden until Hover) -->
+                <iframe src="/theme1_minimalist/index.html#preview" class="preview-iframe" title="Animated preview of Theme 1: Minimalist" tabindex="-1" loading="lazy"></iframe>
+            </div>
+            <div class="theme-details">
+                <p class="theme-tags">Clean • Modern</p>
+                <h3 class="theme-title">Theme 1: Minimalist</h3>
+                <p class="theme-desc">A clean white design with a focus on elegant minimalism. A good fit for couples who want something simple, polished and modern.</p>
+                <a href="/theme1_minimalist/index.html" class="view-btn">View theme</a>
+            </div>
+        </div>
+
+        <!-- Theme 2 -->
+        <div class="theme-card theme-2">
+            <div class="theme-image-wrapper">
+                <iframe src="/theme2_royal_dark/index.html" class="cover-iframe" title="Preview Theme 2: Royal Dark" tabindex="-1" loading="lazy"></iframe>
+                <iframe src="/theme2_royal_dark/index.html#preview" class="preview-iframe" title="Animated preview of Theme 2: Royal Dark" tabindex="-1" loading="lazy"></iframe>
+            </div>
+            <div class="theme-details">
+                <p class="theme-tags">Exclusive • Luxe</p>
+                <h3 class="theme-title">Theme 2: Royal Dark</h3>
+                <p class="theme-desc">Dramatic midnight black paired with rich gold. It has an exclusive, formal feel — closer to a royal wedding than a casual one.</p>
+                <a href="/theme2_royal_dark/index.html" class="view-btn">View theme</a>
+            </div>
+        </div>
+
+        <!-- Theme 3 -->
+        <div class="theme-card theme-3">
+            <div class="theme-image-wrapper">
+                <iframe src="/theme3_boho_floral/index.html" class="cover-iframe" title="Preview Theme 3: Boho Floral" tabindex="-1" loading="lazy"></iframe>
+                <iframe src="/theme3_boho_floral/index.html#preview" class="preview-iframe" title="Animated preview of Theme 3: Boho Floral" tabindex="-1" loading="lazy"></iframe>
+            </div>
+            <div class="theme-details">
+                <p class="theme-tags">Natural • Romantic</p>
+                <h3 class="theme-title">Theme 3: Boho Floral</h3>
+                <p class="theme-desc">Floral details, earth tones and a natural look. Relaxed and romantic, a lovely fit for an outdoor or garden wedding.</p>
+                <a href="/theme3_boho_floral/index.html" class="view-btn">View theme</a>
+            </div>
+        </div>
+
+        <!-- Theme 4 -->
+        <div class="theme-card theme-4">
+            <div class="theme-image-wrapper">
+                <iframe src="/theme4_modern_geometric/index.html" class="cover-iframe" title="Preview Theme 4: Modern Geometric" tabindex="-1" loading="lazy"></iframe>
+                <iframe src="/theme4_modern_geometric/index.html#preview" class="preview-iframe" title="Animated preview of Theme 4: Modern Geometric" tabindex="-1" loading="lazy"></iframe>
+            </div>
+            <div class="theme-details">
+                <p class="theme-tags">Unique • Contemporary</p>
+                <h3 class="theme-title">Theme 4: Modern Geometric</h3>
+                <p class="theme-desc">Calm deep blue tones with clean geometric shapes. A contemporary look that feels steady and considered.</p>
+                <a href="/theme4_modern_geometric/index.html" class="view-btn">View theme</a>
+            </div>
+        </div>
+
+        <!-- Theme 5 -->
+        <div class="theme-card theme-5">
+            <div class="theme-image-wrapper">
+                <iframe src="/theme5_classic_romantic/index.html" class="cover-iframe" title="Preview Theme 5: Classic Romantic" tabindex="-1" loading="lazy"></iframe>
+                <iframe src="/theme5_classic_romantic/index.html#preview" class="preview-iframe" title="Animated preview of Theme 5: Classic Romantic" tabindex="-1" loading="lazy"></iframe>
+            </div>
+            <div class="theme-details">
+                <p class="theme-tags">Classic • Soft</p>
+                <h3 class="theme-title">Theme 5: Classic Romantic</h3>
+                <p class="theme-desc">Soft pink tones with graceful curved details. A classic, romantic look that feels timeless.</p>
+                <a href="/theme5_classic_romantic/index.html" class="view-btn">View theme</a>
+            </div>
+        </div>
+
+        <!-- Theme 6 -->
+        <div class="theme-card theme-6">
+            <div class="theme-image-wrapper">
+                <iframe src="/theme6_rustic_vintage/index.html" class="cover-iframe" title="Preview Theme 6: Rustic Vintage" tabindex="-1" loading="lazy"></iframe>
+                <iframe src="/theme6_rustic_vintage/index.html#preview" class="preview-iframe" title="Animated preview of Theme 6: Rustic Vintage" tabindex="-1" loading="lazy"></iframe>
+            </div>
+            <div class="theme-details">
+                <p class="theme-tags">Traditional • Warm</p>
+                <h3 class="theme-title">Theme 6: Rustic Vintage</h3>
+                <p class="theme-desc">A nostalgic feel, with wood and old-paper textures. A warm sepia theme for couples who like a retro or rustic look.</p>
+                <a href="/theme6_rustic_vintage/index.html" class="view-btn">View theme</a>
+            </div>
+        </div>
+
+        <!-- Theme 7 -->
+        <div class="theme-card theme-7">
+            <div class="theme-image-wrapper">
+                <iframe src="/theme7_pastel_glass/index.html" class="cover-iframe" title="Preview Theme 7: Pastel Glass" tabindex="-1" loading="lazy"></iframe>
+                <iframe src="/theme7_pastel_glass/index.html#preview" class="preview-iframe" title="Animated preview of Theme 7: Pastel Glass" tabindex="-1" loading="lazy"></iframe>
+            </div>
+            <div class="theme-details">
+                <p class="theme-tags">Dreamy • Futuristic</p>
+                <h3 class="theme-title">Theme 7: Pastel Glass</h3>
+                <p class="theme-desc">Frosted glass panels over a pastel gradient. A modern glassmorphism look that feels a little dreamlike and distinctive.</p>
+                <a href="/theme7_pastel_glass/index.html" class="view-btn">View theme</a>
+            </div>
+        </div>
+
+        <!-- Theme 8 -->
+        <div class="theme-card theme-8">
+            <div class="theme-image-wrapper">
+                <iframe src="/theme8_elegant_monochrome/index.html" class="cover-iframe" title="Preview Theme 8: Elegant Monochrome" tabindex="-1" loading="lazy"></iframe>
+                <iframe src="/theme8_elegant_monochrome/index.html#preview" class="preview-iframe" title="Animated preview of Theme 8: Elegant Monochrome" tabindex="-1" loading="lazy"></iframe>
+            </div>
+            <div class="theme-details">
+                <p class="theme-tags">Exclusive • Timeless</p>
+                <h3 class="theme-title">Theme 8: Elegant Monochrome</h3>
+                <p class="theme-desc">Bold black and white, like a luxury fashion magazine. Strong typography and dramatic space, for couples who like a refined, lasting look.</p>
+                <a href="/theme8_elegant_monochrome/index.html" class="view-btn">View theme</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img loading="lazy" decoding="async" src="/assets/lp-wordmark-800.png" width="800" height="436" alt="Logo Langkah Pertama">
+        <p>&copy; 2026 Langkah Pertama. All rights reserved.</p>
+        <a href="/en/" class="footer-home-link">← Back to home</a>
+        <a href="/harga/" class="footer-home-link">Harga</a>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+    <script>
+    (function () {
+        'use strict';
+        var btn = document.getElementById('toTop');
+        var rm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        function toggle() { btn.classList.toggle('show', window.scrollY > 600); }
+        window.addEventListener('scroll', toggle, { passive: true });
+        toggle();
+        btn.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: rm ? 'auto' : 'smooth' });
+        });
+    })();
+    </script>
+</body>
+</html>
