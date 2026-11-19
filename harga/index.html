@@ -8,19 +8,19 @@
     <meta name="theme-color" content="#05060a">
     <title>Harga &amp; Pelan — Langkah Pertama</title>
     <link rel="canonical" href="https://langkahpertama.website/harga/">
-    <meta name="description" content="Harga dan pelan jagaan laman web Langkah Pertama. Asas RM29, Bisnes RM59, Pro RM99 sebulan. Bayar setahun, 2 bulan percuma. Hosting, SSL, backup dan kemaskini. DM kami untuk tanya.">
+    <meta name="description" content="Harga dan pelan jagaan laman web Langkah Pertama. Bisnes RM59, Pro RM99 sebulan. Bayar setahun, 2 bulan percuma. Hosting, SSL, backup dan kemaskini. DM kami untuk tanya.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ms_MY">
     <meta property="og:site_name" content="Langkah Pertama">
     <meta property="og:url" content="https://langkahpertama.website/harga/">
     <meta property="og:title" content="Harga &amp; Pelan — Langkah Pertama">
-    <meta property="og:description" content="Harga dan pelan jagaan laman web. Asas RM29, Bisnes RM59, Pro RM99 sebulan. Bayar setahun, 2 bulan percuma. DM kami untuk tanya.">
+    <meta property="og:description" content="Harga dan pelan jagaan laman web. Bisnes RM59, Pro RM99 sebulan. Bayar setahun, 2 bulan percuma. DM kami untuk tanya.">
     <meta property="og:image" content="https://langkahpertama.website/assets/og-image-2.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Harga &amp; Pelan — Langkah Pertama">
-    <meta name="twitter:description" content="Harga dan pelan jagaan laman web. Asas RM29, Bisnes RM59, Pro RM99 sebulan. Bayar setahun, 2 bulan percuma. DM kami untuk tanya.">
+    <meta name="twitter:description" content="Harga dan pelan jagaan laman web. Bisnes RM59, Pro RM99 sebulan. Bayar setahun, 2 bulan percuma. DM kami untuk tanya.">
     <meta name="twitter:image" content="https://langkahpertama.website/assets/og-image-2.png">
     <link rel="icon" href="/assets/icon-192.png" type="image/png">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -195,7 +195,7 @@
             background: var(--bg-soft); font-family: var(--disp); font-weight: 600; font-size: .8rem;
         }
         .cmp th:first-child, .cmp td:first-child {
-            text-align: left; width: 42%; color: var(--text); font-weight: 500;
+            text-align: left; width: 52%; color: var(--text); font-weight: 500;
             position: sticky; left: 0; background: var(--bg);
         }
         .cmp thead th:first-child { background: var(--bg-soft); }
@@ -287,7 +287,7 @@
             .sheet.is-on { transform: translateY(0) scale(1); }
         }
         @media (min-width: 780px) {
-            .plans { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+            .plans { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
             .plan { padding: 30px 24px 26px; }
             .hero { padding-top: 72px; }
             .cmp th, .cmp td { padding: 12px 10px; font-size: .9rem; }
@@ -327,9 +327,39 @@
       "@id": "https://langkahpertama.website/harga/#webpage",
       "url": "https://langkahpertama.website/harga/",
       "name": "Harga & Pelan — Langkah Pertama",
-      "description": "Harga dan pelan jagaan laman web Langkah Pertama. Asas RM29, Bisnes RM59, Pro RM99 sebulan. Bayar setahun, 2 bulan percuma. Hosting, SSL, backup dan kemaskini. DM kami untuk tanya.",
+      "description": "Harga dan pelan jagaan laman web Langkah Pertama. Bisnes RM59, Pro RM99 sebulan. Bayar setahun, 2 bulan percuma. Hosting, SSL, backup dan kemaskini. DM kami untuk tanya.",
       "isPartOf": { "@id": "https://langkahpertama.website/#business" },
-      "inLanguage": "ms"
+      "inLanguage": "ms",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Pelan Bisnes — bulanan",
+          "price": "59",
+          "priceCurrency": "MYR",
+          "url": "https://langkahpertama.website/harga/"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pelan Bisnes — tahunan",
+          "price": "590",
+          "priceCurrency": "MYR",
+          "url": "https://langkahpertama.website/harga/"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pelan Pro — bulanan",
+          "price": "99",
+          "priceCurrency": "MYR",
+          "url": "https://langkahpertama.website/harga/"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pelan Pro — tahunan",
+          "price": "990",
+          "priceCurrency": "MYR",
+          "url": "https://langkahpertama.website/harga/"
+        }
+      ]
     }
   ]
 }
@@ -354,7 +384,7 @@
         <header class="hero">
             <span class="eyebrow">Harga &amp; Pelan</span>
             <h1>Harga yang jelas, pelan yang mudah difahami.</h1>
-            <p class="lead">Tiga pelan jagaan laman web: hosting, SSL, backup dan kemaskini. Pilih bayaran bulanan, atau bayar setahun dan dapat 2 bulan percuma.</p>
+            <p class="lead">Dua pelan jagaan laman web: hosting, SSL, backup dan kemaskini. Pilih bayaran bulanan, atau bayar setahun dan dapat 2 bulan percuma.</p>
         </header>
 
         <div class="bill-wrap">
@@ -365,23 +395,7 @@
             <p class="bill-note" id="billNote">Harga di bawah untuk bayaran setiap bulan.</p>
         </div>
 
-        <section class="plans" aria-label="Tiga pelan jagaan">
-            <article class="plan" aria-labelledby="p-asas">
-                <h2 id="p-asas">Asas</h2>
-                <p class="price">
-                    <span class="price-month">RM29 <small>/bulan</small></span>
-                    <span class="price-year">RM290 <small>/tahun</small></span>
-                </p>
-                <p class="save">2 bulan percuma</p>
-                <ul class="features">
-                    <li>Hosting dan SSL<span class="what">Apa maksudnya: laman web anda dihoskan dengan sambungan selamat (HTTPS).</span></li>
-                    <li>Pemantauan uptime<span class="what">Apa maksudnya: kalau laman web turun, kami dapat amaran dan kami baiki. Ini pemantauan, bukan jaminan tiada gangguan.</span></li>
-                    <li>Backup setiap bulan<span class="what">Apa maksudnya: kami simpan salinan, supaya laman web boleh dipulihkan jika perlu.</span></li>
-                    <li>1 perubahan kecil teks atau gambar sebulan<span class="what">Apa maksudnya: satu suntingan kecil — contohnya tukar ayat, betulkan ejaan, atau ganti satu gambar.</span></li>
-                </ul>
-                <button type="button" class="btn btn-ghost js-open" data-plan="Asas">Hubungi kami</button>
-            </article>
-
+        <section class="plans" aria-label="Dua pelan jagaan">
             <article class="plan popular" aria-labelledby="p-bisnes">
                 <span class="plan-tag">Pilihan ramai</span>
                 <h2 id="p-bisnes">Bisnes</h2>
@@ -391,11 +405,12 @@
                 </p>
                 <p class="save">2 bulan percuma</p>
                 <ul class="features">
-                    <li>Semua dalam Asas<span class="what">Termasuk hosting, SSL, pemantauan, backup, dan 1 jenis perubahan yang sama, dengan kuota yang lebih.</span></li>
-                    <li>Sehingga 5 perubahan sebulan<span class="what">Apa maksudnya: sampai lima suntingan kecil dalam sebulan, bukan lima laman web baru.</span></li>
-                    <li>Kemaskini menu atau harga<span class="what">Apa maksudnya: kami ubah senarai menu atau harga yang anda beritahu.</span></li>
-                    <li>Setup Google Business Profile<span class="what">Apa maksudnya: kedai anda boleh muncul di Google Maps dan Carian Google.</span></li>
-                    <li>Laporan pelawat setiap bulan<span class="what">Apa maksudnya: berapa orang lawat laman web anda, dan dari mana mereka datang.</span></li>
+                    <li>Hosting dan SSL (HTTPS)<span class="what">Apa maksudnya: laman web anda dihoskan dengan sambungan selamat.</span></li>
+                    <li>Pemantauan uptime automatik; kalau rosak di pihak kami, kami baiki (bukan jaminan tiada gangguan)<span class="what">Apa maksudnya: sistem pantau laman web secara automatik. Bukan jaminan laman web sentiasa hidup.</span></li>
+                    <li>Backup setiap bulan<span class="what">Apa maksudnya: kami simpan salinan, supaya laman web boleh dipulihkan jika perlu.</span></li>
+                    <li>Sehingga 3 perubahan kecil sebulan (teks, gambar, waktu buka)<span class="what">Apa maksudnya: sampai tiga suntingan kecil dalam sebulan, bukan laman web baru.</span></li>
+                    <li>Kemaskini menu, senarai harga &amp; waktu buka<span class="what">Apa maksudnya: kami ubah menu, harga atau waktu buka yang anda beritahu.</span></li>
+                    <li>Balasan mesej dalam 1 hari bekerja<span class="what">Apa maksudnya: kami balas dalam satu hari bekerja. Bukan janji 24 jam.</span></li>
                 </ul>
                 <button type="button" class="btn btn-gold js-open" data-plan="Bisnes">Hubungi kami</button>
             </article>
@@ -408,10 +423,10 @@
                 </p>
                 <p class="save">2 bulan percuma</p>
                 <ul class="features">
-                    <li>Semua dalam Bisnes<span class="what">Termasuk kuota 5 perubahan, kemaskini menu atau harga, Google Business Profile, dan laporan pelawat.</span></li>
-                    <li>Satu bahagian atau halaman baru setiap suku tahun<span class="what">Apa maksudnya: setiap tiga bulan, kami tambah satu bahagian atau satu halaman baru pada laman web anda.</span></li>
-                    <li>Balasan keutamaan pada hari yang sama<span class="what">Apa maksudnya: kami utamakan mesej pelan Pro dan balas pada hari yang sama. Bukan janji 24 jam setiap hari.</span></li>
-                    <li>Ubah suai butang WhatsApp dan butang pesanan<span class="what">Apa maksudnya: kami kemaskini butang yang sudah ada di laman web anda. Tiada nombor atau pautan WhatsApp di halaman ini.</span></li>
+                    <li>Semua dalam Bisnes<span class="what">Termasuk hosting, SSL, pemantauan, backup, kemaskini menu dan balasan 1 hari bekerja. Kuota perubahan adalah seperti di bawah.</span></li>
+                    <li>Sehingga 6 perubahan kecil sebulan<span class="what">Apa maksudnya: sampai enam suntingan kecil dalam sebulan, bukan laman web baru.</span></li>
+                    <li>1 bahagian baru pada page sedia ada setiap 3 bulan (contoh galeri, jalur promo, FAQ)<span class="what">Apa maksudnya: satu bahagian baru pada halaman yang sudah ada — bukan halaman baru.</span></li>
+                    <li>Laporan semakan ringkas bulanan (butang &amp; link berfungsi, paparan phone OK)<span class="what">Apa maksudnya: kami semak butang dan pautan, dan pastikan paparan telefon elok.</span></li>
                 </ul>
                 <button type="button" class="btn btn-ghost js-open" data-plan="Pro">Hubungi kami</button>
             </article>
@@ -427,22 +442,19 @@
                     <thead>
                         <tr>
                             <th scope="col">Termasuk</th>
-                            <th scope="col">Asas</th>
                             <th scope="col">Bisnes</th>
                             <th scope="col">Pro</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><th scope="row">Hosting dan SSL</th><td class="yes">Ada</td><td class="yes">Ada</td><td class="yes">Ada</td></tr>
-                        <tr><th scope="row">Pemantauan uptime</th><td class="yes">Ada</td><td class="yes">Ada</td><td class="yes">Ada</td></tr>
-                        <tr><th scope="row">Backup setiap bulan</th><td class="yes">Ada</td><td class="yes">Ada</td><td class="yes">Ada</td></tr>
-                        <tr><th scope="row">Perubahan sebulan</th><td>1</td><td>5</td><td>5</td></tr>
-                        <tr><th scope="row">Kemaskini menu atau harga</th><td class="no">—</td><td class="yes">Ada</td><td class="yes">Ada</td></tr>
-                        <tr><th scope="row">Setup Google Business Profile</th><td class="no">—</td><td class="yes">Ada</td><td class="yes">Ada</td></tr>
-                        <tr><th scope="row">Laporan pelawat bulanan</th><td class="no">—</td><td class="yes">Ada</td><td class="yes">Ada</td></tr>
-                        <tr><th scope="row">Bahagian atau halaman baru setiap suku tahun</th><td class="no">—</td><td class="no">—</td><td class="yes">Ada</td></tr>
-                        <tr><th scope="row">Balasan keutamaan hari yang sama</th><td class="no">—</td><td class="no">—</td><td class="yes">Ada</td></tr>
-                        <tr><th scope="row">Ubah suai butang WhatsApp dan pesanan</th><td class="no">—</td><td class="no">—</td><td class="yes">Ada</td></tr>
+                        <tr><th scope="row">Hosting dan SSL (HTTPS)</th><td class="yes">Ada</td><td class="yes">Ada</td></tr>
+                        <tr><th scope="row">Pemantauan uptime automatik</th><td class="yes">Ada</td><td class="yes">Ada</td></tr>
+                        <tr><th scope="row">Backup setiap bulan</th><td class="yes">Ada</td><td class="yes">Ada</td></tr>
+                        <tr><th scope="row">Perubahan kecil sebulan</th><td>3</td><td>6</td></tr>
+                        <tr><th scope="row">Kemaskini menu, senarai harga &amp; waktu buka</th><td class="yes">Ada</td><td class="yes">Ada</td></tr>
+                        <tr><th scope="row">Balasan mesej dalam 1 hari bekerja</th><td class="yes">Ada</td><td class="yes">Ada</td></tr>
+                        <tr><th scope="row">1 bahagian baru pada page sedia ada setiap 3 bulan</th><td class="no">—</td><td class="yes">Ada</td></tr>
+                        <tr><th scope="row">Laporan semakan ringkas bulanan</th><td class="no">—</td><td class="yes">Ada</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -453,7 +465,7 @@
             <div class="faq-list">
                 <details>
                     <summary>Apa yang dikira sebagai satu perubahan?</summary>
-                    <p>Satu suntingan kecil pada teks atau gambar. Contohnya: tukar ayat di halaman utama, betulkan ejaan, ganti satu gambar, atau kemaskini waktu buka. Pelan Asas: satu perubahan sebegitu sebulan. Pelan Bisnes dan Pro: sehingga lima. Halaman atau bahagian baru termasuk dalam pelan Pro, sekali setiap suku tahun — itu berasingan daripada kuota perubahan kecil.</p>
+                    <p>Satu suntingan kecil pada teks, gambar atau waktu buka. Contohnya: tukar ayat di halaman utama, betulkan ejaan, ganti satu gambar, atau kemaskini waktu buka. Pelan Bisnes: sehingga 3 sebulan. Pelan Pro: sehingga 6 sebulan. Bahagian baru pada halaman sedia ada (pelan Pro, sekali setiap 3 bulan) berasingan daripada kuota perubahan kecil.</p>
                 </details>
                 <details>
                     <summary>Apa jadi kalau saya nak berhenti?</summary>
@@ -468,8 +480,12 @@
                     <p>Pelan di atas adalah untuk jagaan. Yuran setup sekali sahaja ada di bawah kad pelan; jumlahnya belum ditetapkan.</p>
                 </details>
                 <details>
+                    <summary>Kerja di luar pelan macam mana?</summary>
+                    <p>Page baru, reka semula atau kerja lain di luar pelan — sebut harga berasingan.</p>
+                </details>
+                <details>
                     <summary>Pemantauan uptime ni jaminan ke?</summary>
-                    <p>Bukan. Kami pantau laman web anda, dan kalau ia turun kami dapat amaran lalu kami baiki. Kami tidak jamin laman web sentiasa hidup tanpa gangguan.</p>
+                    <p>Bukan. Pemantauan adalah automatik. Kalau rosak di pihak kami, kami baiki. Kami tidak jamin laman web sentiasa hidup tanpa gangguan.</p>
                 </details>
             </div>
         </section>
