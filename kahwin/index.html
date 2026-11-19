@@ -39,7 +39,22 @@
         .skip:focus { left:8px; }
         :focus-visible { outline:3px solid var(--gold); outline-offset:3px; }
         .wrap { width:min(1080px, 100% - 40px); margin-inline:auto; }
-        header.top { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:14px 0; }
+        header.top { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:14px 0; flex-wrap:nowrap; }
+        .brand { min-width:0; flex-shrink:1; }
+        .brand span { white-space:nowrap; }
+        .top-links { display:flex; align-items:center; gap:4px; flex-shrink:0; }
+        .top-links a:not(.btn) { display:inline-flex; align-items:center; justify-content:center; min-height:44px; min-width:44px; padding:0 10px; text-decoration:none; font-weight:600; white-space:nowrap; color:var(--ink); }
+        @media (max-width: 400px) {
+            header.top { gap:6px; }
+            .brand { gap:8px; }
+            .brand img { width:32px; }
+            .top-links a:not(.btn) { padding:0 6px; }
+            .btn-sm { padding:8px 10px; }
+        }
+        @media (max-width: 370px) {
+            .brand span { display:none; }
+            .brand img { width:38px; }
+        }
         .brand { display:flex; align-items:center; gap:10px; text-decoration:none; font-weight:700; min-height:44px; }
         .brand img { width:38px; height:auto; }
         .brand span small { display:block; font-weight:500; font-size:.72rem; color:var(--soft); letter-spacing:.08em; text-transform:uppercase; }
@@ -144,7 +159,10 @@
             <img src="/assets/lp-mark-gold.png" width="183" height="188" alt="Logo Langkah Pertama">
             <span>Langkah Pertama<small>E-Kad Kahwin</small></span>
         </a>
-        <a class="btn btn-gold btn-sm" href="#dm">DM kami</a>
+        <nav class="top-links" aria-label="Navigasi">
+            <a href="/harga/">Harga</a>
+            <a class="btn btn-gold btn-sm" href="#dm">DM kami</a>
+        </nav>
     </header>
 
     <main id="isi">
@@ -235,7 +253,7 @@
 </div>
 <footer>
     <div class="wrap">
-        <p><a href="../">Langkah Pertama</a> · <a href="/wedding/">8 Tema</a> · <a href="/arkib/">Arkib Majlis</a> · <a href="../kedai/">Untuk Kedai</a></p>
+        <p><a href="../">Langkah Pertama</a> · <a href="/wedding/">8 Tema</a> · <a href="/arkib/">Arkib Majlis</a> · <a href="../kedai/">Untuk Kedai</a> · <a href="/harga/">Harga</a></p>
         <p>&copy; 2026 Langkah Pertama</p>
     </div>
 </footer>

@@ -79,16 +79,21 @@
             display: block; font-family: var(--sans); font-weight: 500;
             font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; color: var(--dim);
         }
-        .top-links { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 4px 6px; }
+        .top { flex-wrap: nowrap; min-height: 81px; }
+        .brand-name { white-space: nowrap; }
+        .top-links { display: flex; flex-wrap: nowrap; align-items: center; justify-content: flex-end; gap: 4px 6px; flex-shrink: 0; }
+        .top-links a[aria-current="page"] { color: var(--text); }
         .top-links a {
             display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px;
             color: var(--dim); text-decoration: none; font-size: .9rem; font-weight: 500;
             transition: color .4s var(--ease);
         }
         .top-links a:hover { color: var(--text); }
+        .top-links a { justify-content: center; }
+        .top-links a[aria-current="page"] { min-width: 58px; }
         .top-links .nav-cta {
             color: var(--ink); background: var(--gold); border-radius: 999px;
-            padding: 0 16px; font-weight: 600;
+            padding: 0 16px; font-weight: 600; min-width: 121px;
         }
         .top-links .nav-cta:hover { color: var(--ink); background: var(--gold-lite); }
 
@@ -175,8 +180,9 @@
         .setup {
             margin: 28px 0 8px; padding: 18px 20px;
             border: 1px dashed rgba(217, 176, 108, .45); border-radius: 14px;
-            text-align: center; font-size: 1.02rem;
+            text-align: left; font-size: 1.02rem;
         }
+        .setup .what { display: block; margin-top: 10px; color: var(--dim); font-size: .92rem; }
 
         .compare { padding: 48px 0 12px; }
         .compare h2, .faq h2, .cta h2 {
@@ -277,7 +283,12 @@
         footer a:hover { color: var(--gold); }
 
         @media (max-width: 640px) {
-            .top-links a:not(.nav-cta) { display: none; }
+            .top-links a.nav-extra { display: none; }
+            .top { gap: 8px; }
+            .top-links { gap: 0; }
+            .top-links a { padding: 0 8px; }
+            .top-links .nav-cta { padding: 0 12px; }
+            .brand-name { font-size: .82rem; }
             .sheet {
                 left: 0; right: 0; top: auto; bottom: 0;
                 width: 100%; max-height: min(85vh, calc(100% - 72px));
@@ -285,6 +296,9 @@
                 transform: translateY(16px) scale(1);
             }
             .sheet.is-on { transform: translateY(0) scale(1); }
+        }
+        @media (max-width: 370px) {
+            .brand-name { display: none; }
         }
         @media (min-width: 780px) {
             .plans { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
@@ -358,6 +372,20 @@
           "price": "990",
           "priceCurrency": "MYR",
           "url": "https://langkahpertama.website/harga/"
+        },
+        {
+          "@type": "Offer",
+          "name": "Yuran setup sekali sahaja — domain sendiri",
+          "price": "500",
+          "priceCurrency": "MYR",
+          "url": "https://langkahpertama.website/harga/#yuran-setup"
+        },
+        {
+          "@type": "Offer",
+          "name": "Yuran setup sekali sahaja — termasuk domain pilihan anda",
+          "price": "800",
+          "priceCurrency": "MYR",
+          "url": "https://langkahpertama.website/harga/#yuran-setup"
         }
       ]
     }
@@ -374,8 +402,9 @@
             <span class="brand-name">Langkah Pertama<small>Studio Web</small></span>
         </a>
         <nav class="top-links" aria-label="Navigasi">
-            <a href="/kahwin/">Untuk Pasangan</a>
-            <a href="/kedai/">Untuk Kedai</a>
+            <a class="nav-extra" href="/kahwin/">Untuk Pasangan</a>
+            <a class="nav-extra" href="/kedai/">Untuk Kedai</a>
+            <a href="/harga/" aria-current="page">Harga</a>
             <a class="nav-cta" href="#hubungi">Hubungi kami</a>
         </nav>
     </header>
@@ -432,7 +461,10 @@
             </article>
         </section>
 
-        <p class="setup" id="yuran-setup">Yuran setup sekali sahaja: [TBC]</p>
+        <div class="setup" id="yuran-setup">
+            <p>Yuran setup sekali sahaja: RM500 jika anda dah ada domain sendiri; RM800 termasuk domain pilihan anda (.com, .my dan lain-lain) yang kami daftarkan untuk anda.</p>
+            <p class="what">Apa maksudnya: domain ialah alamat laman web anda, cth namakedai.com.</p>
+        </div>
 
         <section class="compare" aria-labelledby="h-banding">
             <h2 id="h-banding">Bandingkan pelan</h2>
@@ -469,7 +501,11 @@
                 </details>
                 <details>
                     <summary>Apa jadi kalau saya nak berhenti?</summary>
-                    <p>Polisi berhenti belum ditetapkan. [TBC]</p>
+                    <p>Anda boleh berhenti bila-bila masa sebelum tarikh bil seterusnya, dan anda akan dapat fail laman web anda.</p>
+                </details>
+                <details>
+                    <summary>Pelan tahunan diperbaharui automatik ke?</summary>
+                    <p>Tidak. Pelan tahunan tidak diperbaharui secara automatik. Kami akan ingatkan anda sebelum pelan tamat.</p>
                 </details>
                 <details>
                     <summary>Macam mana nak bayar?</summary>
@@ -477,7 +513,7 @@
                 </details>
                 <details>
                     <summary>Adakah ini termasuk buat laman web baru?</summary>
-                    <p>Pelan di atas adalah untuk jagaan. Yuran setup sekali sahaja ada di bawah kad pelan; jumlahnya belum ditetapkan.</p>
+                    <p>Pelan di atas adalah untuk jagaan. Yuran setup sekali sahaja ada di bawah kad pelan: RM500 jika anda dah ada domain sendiri, atau RM800 termasuk domain pilihan anda.</p>
                 </details>
                 <details>
                     <summary>Kerja di luar pelan macam mana?</summary>
@@ -504,6 +540,7 @@
             <a href="/kahwin/">Untuk Pasangan</a>
             <a href="/kedai/">Untuk Kedai</a>
             <a href="/wedding/">E-Kad Kahwin</a>
+            <a href="/harga/" aria-current="page">Harga</a>
         </nav>
         <p>&copy; 2026 Langkah Pertama</p>
     </div>

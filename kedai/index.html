@@ -40,7 +40,22 @@
         :focus-visible { outline:3px solid var(--chili); outline-offset:3px; }
         .wrap { width:min(1100px, 100% - 36px); margin-inline:auto; }
         .bar { background:var(--green); color:#fff; }
-        .bar .wrap { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px 0; }
+        .bar .wrap { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px 0; flex-wrap:nowrap; }
+        .brand { min-width:0; flex-shrink:1; }
+        .brand span { white-space:nowrap; }
+        .top-links { display:flex; align-items:center; gap:4px; flex-shrink:0; }
+        .top-links a:not(.btn) { display:inline-flex; align-items:center; justify-content:center; min-height:44px; min-width:44px; padding:0 10px; text-decoration:none; font-weight:600; white-space:nowrap; color:#fff; }
+        @media (max-width: 400px) {
+            .bar .wrap { gap:6px; }
+            .brand { gap:8px; }
+            .brand img { width:32px; }
+            .top-links a:not(.btn) { padding:0 6px; }
+            .btn-sm { padding:8px 10px; }
+        }
+        @media (max-width: 370px) {
+            .brand span { display:none; }
+            .brand img { width:36px; }
+        }
         .brand { display:flex; align-items:center; gap:10px; text-decoration:none; font-weight:700; min-height:44px; }
         .brand img { width:36px; height:auto; }
         .brand small { display:block; font-weight:400; font-size:.72rem; opacity:.8; letter-spacing:.06em; text-transform:uppercase; }
@@ -145,7 +160,10 @@
             <img src="/assets/lp-mark-gold.png" width="183" height="188" alt="Logo Langkah Pertama">
             <span>Langkah Pertama<small>Untuk Kedai</small></span>
         </a>
-        <a class="btn btn-sm" href="#dm">DM kami</a>
+        <nav class="top-links" aria-label="Navigasi">
+            <a href="/harga/">Harga</a>
+            <a class="btn btn-sm" href="#dm">DM kami</a>
+        </nav>
     </div>
 </div>
 
@@ -223,7 +241,7 @@
 </main>
 <footer>
     <div class="wrap">
-        <p><a href="../">Langkah Pertama</a> · <a href="/menu/">Contoh Menu</a> · <a href="/sites/">Contoh Laman Web</a> · <a href="../kahwin/">Untuk Pasangan</a></p>
+        <p><a href="../">Langkah Pertama</a> · <a href="/menu/">Contoh Menu</a> · <a href="/sites/">Contoh Laman Web</a> · <a href="../kahwin/">Untuk Pasangan</a> · <a href="/harga/">Harga</a></p>
         <p>&copy; 2026 Langkah Pertama</p>
     </div>
 </footer>

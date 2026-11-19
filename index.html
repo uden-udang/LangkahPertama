@@ -243,6 +243,22 @@
             color: var(--dim);
             font-weight: 400;
         }
+        .nav-harga-compact {
+            display: none;
+            align-items: center;
+            min-height: 44px;
+            padding: 0 12px;
+            margin-left: auto;
+            color: var(--dim);
+            text-decoration: none;
+            font-family: var(--mono);
+            font-size: 0.78rem;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            transition: color 0.3s;
+        }
+        .nav-harga-compact:hover { color: var(--text); }
         .nav-links {
             display: flex;
             align-items: center;
@@ -1614,6 +1630,7 @@
         @media (max-width: 700px) {
             .nav-links { display: none; }
             .menu-btn { display: block; }
+            .nav-harga-compact { display: inline-flex; }
             .services-grid { grid-template-columns: 1fr; }
             .steps { grid-template-columns: 1fr; }
             .stats { grid-template-columns: 1fr 1fr; gap: 14px; }
@@ -1836,7 +1853,7 @@
             [data-speed] { transform: none !important; }
         }
             /* tap targets >=44px (mobile) */
-        .contact-alt a, .footer-links a { display:inline-flex; align-items:center; min-height:44px; }
+        .contact-alt a, .footer-links a { display:inline-flex; align-items:center; justify-content:center; min-height:44px; min-width:44px; }
         .footer-links { row-gap:0; }
         .to-top, .menu-btn { min-width:44px; min-height:44px; }
     </style>
@@ -1910,8 +1927,10 @@
                 <li><a href="#work">Contoh</a></li>
                 <li><a href="#process">Cara</a></li>
                 <li><a href="#about">Tentang</a></li>
+                <li><a href="harga/">Harga</a></li>
                 <li><a href="#contact" class="nav-cta">DM Kami</a></li>
             </ul>
+            <a href="harga/" class="nav-harga-compact">Harga</a>
             <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
@@ -1925,7 +1944,8 @@
         <a href="#work" style="transition-delay:0.12s">Contoh</a>
         <a href="#process" style="transition-delay:0.19s">Cara</a>
         <a href="#about" style="transition-delay:0.26s">Tentang</a>
-        <a href="#contact" style="transition-delay:0.33s">DM Kami</a>
+        <a href="harga/" style="transition-delay:0.33s">Harga</a>
+        <a href="#contact" style="transition-delay:0.40s">DM Kami</a>
     </div>
 
     <!-- ============ HERO — First Light ============ -->
@@ -2311,6 +2331,7 @@
                 <li><a href="arkib/">Arkib Majlis</a></li>
                 <li><a href="kahwin/">Untuk Pasangan</a></li>
                 <li><a href="kedai/">Untuk Kedai</a></li>
+                <li><a href="harga/">Harga</a></li>
                 <li><a href="https://www.instagram.com/_langkahpertama_/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                 <li><a href="https://www.tiktok.com/@langkahpertama26" target="_blank" rel="noopener noreferrer">TikTok</a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=61595196002458" target="_blank" rel="noopener noreferrer">Facebook</a></li>
